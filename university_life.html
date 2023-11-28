@@ -5,26 +5,309 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chenjun Zheng | University Life</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section-heading {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #007bff;
+    }
+    .course-container, .project {
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    }
+    .course-title {
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    .project-title {
+      font-weight: 500;
+    }
+    .grade {
+      font-weight: 600;
+      color: #28a745;
+    }
+    .icon {
+      margin-right: 10px;
+      color: #007bff;
+    }
+    .image-container {
+  width: 100%; /* 或者可以设置为特定的宽度，如 400px */
+  height: 200px; /* 容器的固定高度，可根据需要调整 */
+  overflow: hidden; /* 防止图片超出容器 */
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.course-image {
+  max-width: 100%; /* 确保图片宽度不超过容器 */
+  max-height: 100%; /* 确保图片高度不超过容器 */
+  object-fit: contain; /* 图片内容完整显示 */
+}
+
+.project {
+  position: relative; /* 确保项目具有相对定位 */
+  /* ...其他样式... */
+}
+
+.image-tooltip {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.tooltip-image {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  left: 300px;  /* 调整为适当的值 */
+  top: -180%;  /* 调整为适当的值 */
+  transform: translateX(-50%); /* 可以根据需要调整偏移量 */
+}
+
+.tooltip-image img {
+  width: 500px; /* 控制图片宽度 */
+  height: 500px; /* 控制图片高度 */
+  object-fit: contain;
+}
+
+.image-tooltip:hover + .tooltip-image {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+  </style>
 </head>
 <body>
-  <div class="container mt-5">
-    <h1 class="text-center">University Life</h1>
-    <hr>
-    <h2>My Courses</h2>
-    <!-- 课程列表 -->
-    <ul>
-      <li>Course 1: Introduction to Programming - Grade: A</li>
-      <li>Course 2: Web Development - Grade: B+</li>
-      <!-- 更多课程 -->
-    </ul>
 
-    <h2>My Projects</h2>
-    <!-- 项目列表 -->
-    <ul>
-      <li>Project 1: Online Grocery Store</li>
-      <li>Project 2: Car Rental System</li>
-      <!-- 更多项目 -->
-    </ul>
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">University Life</h1>
+    <hr>
+
+    <!-- 大二 -->
+    <div class="section">
+      <h2 class="section-heading">大二Sophomore Year</h2>
+      <!-- 32027 & 31080 Interactive Media - Spring 2022 -->
+      <div class="course-container">
+        <div class="course-title">32027 & 31080 Interactive Media - Spring 2022</div>
+        <div class="image-container">
+            <img src="./projectPicture/31080.png" alt="Interactive Media" class="course-image">
+          </div>
+        <!-- DataDynamics -->
+        <div class="project">
+            <i class="fas fa-video icon"></i>
+            <span class="project-title">DataDynamics</span>
+            <span class="grade">16/20</span>
+            <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+            <div class="tooltip-image">
+              <img src="./projectPicture/grade（DataDynamic）.jpeg" alt="DataDynamics Image">
+            </div>
+          </div>
+        <!-- Interactive Mirror -->
+        <div class="project">
+          <i class="fas fa-mirror icon"></i>
+          <span class="project-title">Interactive Mirror</span>
+          <span class="grade">4/4</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+            <div class="tooltip-image">
+              <img src="./projectPicture/grade（Mirror）.jpeg" alt="DataDynamics Image">
+            </div>
+        </div>
+        <!-- Interactive Musician -->
+        <div class="project">
+          <i class="fas fa-music icon"></i>
+          <span class="project-title">Interactive Musician</span>
+          <span class="grade">22.5/25</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+            <div class="tooltip-image">
+              <img src="./projectPicture/grade（Interactive）.jpeg" alt="DataDynamics Image">
+            </div>
+        </div>
+      </div>
+      <!-- 31927 & 32998 Application Development with .NET -->
+      <div class="course-container">
+        <div class="course-title">31927 & 32998 Application Development with .NET</div>
+        <div class="image-container">
+            <img src="./projectPicture/31927.png" alt="NET" class="course-image">
+          </div>
+        <!-- Simple Banking System -->
+        <div class="project">
+          <i class="fas fa-university icon"></i>
+          <span class="project-title">Simple Banking System</span>
+          <span class="grade">29/35</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（SimpleBankingSystem）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <!-- TextEditor -->
+        <div class="project">
+          <i class="fas fa-edit icon"></i>
+          <span class="project-title">TextEditor</span>
+          <span class="grade">33/35</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（TextEditor）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <!-- Hospital-Management-System -->
+        <div class="project">
+          <i class="fas fa-hospital icon"></i>
+          <span class="project-title">Hospital-Management-System</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 大三上半年 -->
+    <div class="section">
+      <h2 class="section-heading">大三Junior Year - 上半年First Half</h2>
+      <!-- 31748 Programming on the Internet - Autumn 2023 UTS -->
+      <div class="course-container">
+        <div class="course-title">31748 Programming on the Internet - Autumn 2023 UTS</div>
+        <div class="image-container">
+            <img src="./projectPicture/31748.jpeg" alt="NET" class="course-image">
+          </div>
+        <!-- Online Grocery Store -->
+        <div class="project">
+          <i class="fas fa-shopping-cart icon"></i>
+          <span class="project-title">Online Grocery Store</span>
+          <span class="grade">45/45</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（OnlineGroceryStore）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <!-- Online Car Rental System -->
+        <div class="project">
+          <i class="fas fa-car icon"></i>
+          <span class="project-title">Online Car Rental System</span>
+          <span class="grade">35/35</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（CarRentalSystem）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+      </div>
+      <!-- 41025 Introduction to Software Development - Autumn 2023 UTS -->
+      <div class="course-container">
+        <div class="course-title">41025 Introduction to Software Development - Autumn 2023 UTS</div>
+        <div class="image-container">
+            <img src="./projectPicture/41025.png" alt="NET" class="course-image">
+          </div>
+        <!-- IoTBay -->
+        <div class="project">
+          <i class="fas fa-network-wired icon"></i>
+          <span class="project-title">IoTBay</span>
+          <span class="grade">50/50</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（IoTBay）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+      </div>
+      <!-- 41889 & 42889 Application Development in the iOS Environment -->
+      <div class="course-container">
+        <div class="course-title">41889 & 42889 Application Development in the iOS Environment</div>
+        <div class="image-container">
+            <img src="./projectPicture/41889.png" alt="NET" class="course-image">
+          </div>
+        <!-- Bubble Game -->
+        <div class="project">
+          <i class="fas fa-gamepad icon"></i>
+          <span class="project-title">Bubble Game</span>
+          <span class="grade">25/30</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（ass2）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <!-- Car Rental System -->
+        <div class="project">
+          <i class="fas fa-car icon"></i>
+          <span class="project-title">Car Rental System</span>
+          <span class="grade">20/30</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（ass3）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 大三下半年 -->
+    <div class="section">
+      <h2 class="section-heading">大三Junior Year - 下半年Second Half</h2>
+      <!-- 41026 Advanced Software Development - Spring 2023 -->
+      <div class="course-container">
+        <div class="course-title">41026 Advanced Software Development - Spring 2023</div>
+        <div class="image-container">
+            <img src="./projectPicture/41026.png" alt="NET" class="course-image">
+          </div>
+        <!-- Book Online Order System -->
+        <div class="project">
+          <i class="fas fa-book icon"></i>
+          <span class="project-title">Book Online Order System - Release 0</span>
+          <span class="grade">17/20</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（release 0）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <div class="project">
+          <i class="fas fa-book icon"></i>
+          <span class="project-title">Book Online Order System - Release 1</span>
+          <span class="grade">29/30</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（release 1）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+        <div class="project">
+          <i class="fas fa-book icon"></i>
+          <span class="project-title">Book Online Order System - Release 2</span>
+          <span class="grade">29/30</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（release 2）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+      </div>
+      <!-- 41001 Cloud Computing and Software as a Service -->
+      <div class="course-container">
+        <div class="course-title">41001 Cloud Computing and Software as a Service</div>
+        <div class="image-container">
+            <img src="./projectPicture/41001.jpeg" alt="NET" class="course-image">
+          </div>
+        <!-- Human resource Management System (Saleforce) -->
+        <div class="project">
+          <i class="fas fa-cloud icon"></i>
+          grade（41001saleforce）
+          <span class="project-title">Human resource Management System (Saleforce)</span>
+          <span class="grade">53/55</span>
+          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+          <div class="tooltip-image">
+            <img src="./projectPicture/grade（release 2）.jpeg" alt="DataDynamics Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
