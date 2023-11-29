@@ -91,6 +91,23 @@
   opacity: 1;
 }
 
+.image-magnifier {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .magnified-image {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 20px !important; /* 位置调整 */
+  left: 20px !important; /* 位置调整 */
+}
+
+    .image-magnifier:hover .magnified-image {
+      display: block;
+    }
+
 
   </style>
 </head>
@@ -103,12 +120,20 @@
     <!-- 大二 -->
     <div class="section">
       <h2 class="section-heading">大二Sophomore Year</h2>
-      <!-- 32027 & 31080 Interactive Media - Spring 2022 -->
       <div class="course-container">
-        <div class="course-title">32027 & 31080 Interactive Media - Spring 2022</div>
-        <div class="image-container">
-            <img src="./projectPicture/31080.png" alt="Interactive Media" class="course-image">
+        <!-- 使用 flex 布局使标题和放大镜图标在同一行 -->
+        <div class="course-title-container" style="display: flex; align-items: center;">
+          <div class="course-title">32027 & 31080 Interactive Media - Spring 2022</div>
+          <div class="image-magnifier" style="margin-left: 10px;">
+            <i class="fas fa-search-plus"></i>
+            <div class="magnified-image">
+              <img src="./projectPicture/grade（whole31080）.jpeg" alt="New Image Description" style="width: 400px; height: 600px;">
+            </div>
           </div>
+        </div>
+        <div class="image-container">
+          <img src="./projectPicture/31080.png" alt="Interactive Media" class="course-image">
+        </div>
         <!-- DataDynamics -->
         <div class="project">
             <i class="fas fa-video icon"></i>
@@ -141,48 +166,65 @@
         </div>
       </div>
       <!-- 31927 & 32998 Application Development with .NET -->
-      <div class="course-container">
+    <div class="course-container">
+      <div class="course-title-container" style="display: flex; align-items: center;">
         <div class="course-title">31927 & 32998 Application Development with .NET</div>
-        <div class="image-container">
-            <img src="./projectPicture/31927.png" alt="NET" class="course-image">
+        <div class="image-magnifier" style="margin-left: 10px;">
+          <i class="fas fa-search-plus"></i>
+          <div class="magnified-image">
+            <img src="./projectPicture/grade（whole31927）.jpeg" alt="NET" style="width: 400px; height: 600px;">
           </div>
-        <!-- Simple Banking System -->
-        <div class="project">
-          <i class="fas fa-university icon"></i>
-          <span class="project-title">Simple Banking System</span>
-          <span class="grade">29/35</span>
-          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
-          <div class="tooltip-image">
-            <img src="./projectPicture/grade（SimpleBankingSystem）.jpeg" alt="DataDynamics Image">
-          </div>
-        </div>
-        <!-- TextEditor -->
-        <div class="project">
-          <i class="fas fa-edit icon"></i>
-          <span class="project-title">TextEditor</span>
-          <span class="grade">33/35</span>
-          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
-          <div class="tooltip-image">
-            <img src="./projectPicture/grade（TextEditor）.jpeg" alt="DataDynamics Image">
-          </div>
-        </div>
-        <!-- Hospital-Management-System -->
-        <div class="project">
-          <i class="fas fa-hospital icon"></i>
-          <span class="project-title">Hospital-Management-System</span>
         </div>
       </div>
+      <div class="image-container">
+        <img src="./projectPicture/31927.png" alt="NET" class="course-image">
+      </div>
+      <!-- Simple Banking System -->
+      <div class="project">
+        <i class="fas fa-university icon"></i>
+        <span class="project-title">Simple Banking System</span>
+        <span class="grade">29/35</span>
+        <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+        <div class="tooltip-image">
+          <img src="./projectPicture/grade（SimpleBankingSystem）.jpeg" alt="DataDynamics Image">
+        </div>
+      </div>
+      <!-- TextEditor -->
+      <div class="project">
+        <i class="fas fa-edit icon"></i>
+        <span class="project-title">TextEditor</span>
+        <span class="grade">33/35</span>
+        <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+        <div class="tooltip-image">
+          <img src="./projectPicture/grade（TextEditor）.jpeg" alt="DataDynamics Image">
+        </div>
+      </div>
+      <!-- Hospital-Management-System -->
+      <div class="project">
+        <i class="fas fa-hospital icon"></i>
+        <span class="project-title">Hospital-Management-System</span>
+      </div>
     </div>
+  </div>
+      
 
     <!-- 大三上半年 -->
     <div class="section">
       <h2 class="section-heading">大三Junior Year - 上半年First Half</h2>
       <!-- 31748 Programming on the Internet - Autumn 2023 UTS -->
       <div class="course-container">
-        <div class="course-title">31748 Programming on the Internet - Autumn 2023 UTS</div>
-        <div class="image-container">
-            <img src="./projectPicture/31748.jpeg" alt="NET" class="course-image">
+        <div class="course-title-container" style="display: flex; align-items: center;">
+          <div class="course-title">31748 Programming on the Internet - Autumn 2023 UTS</div>
+          <div class="image-magnifier" style="margin-left: 10px;">
+            <i class="fas fa-search-plus"></i>
+            <div class="magnified-image">
+              <img src="./projectPicture/grade（whole31748）.jpeg" alt="NET" style="width: 400px; height: 600px;">
+            </div>
           </div>
+        </div>
+        <div class="image-container">
+          <img src="./projectPicture/31748.jpeg" alt="NET" class="course-image">
+        </div>
         <!-- Online Grocery Store -->
         <div class="project">
           <i class="fas fa-shopping-cart icon"></i>
@@ -204,23 +246,34 @@
           </div>
         </div>
       </div>
+    </div>
+    
       <!-- 41025 Introduction to Software Development - Autumn 2023 UTS -->
-      <div class="course-container">
-        <div class="course-title">41025 Introduction to Software Development - Autumn 2023 UTS</div>
-        <div class="image-container">
-            <img src="./projectPicture/41025.png" alt="NET" class="course-image">
-          </div>
-        <!-- IoTBay -->
-        <div class="project">
-          <i class="fas fa-network-wired icon"></i>
-          <span class="project-title">IoTBay</span>
-          <span class="grade">50/50</span>
-          <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
-          <div class="tooltip-image">
-            <img src="./projectPicture/grade（IoTBay）.jpeg" alt="DataDynamics Image">
-          </div>
-        </div>
+<div class="course-container">
+  <div class="course-title-container" style="display: flex; align-items: center;">
+    <div class="course-title">41025 Introduction to Software Development - Autumn 2023 UTS</div>
+    <div class="image-magnifier" style="margin-left: 10px;">
+      <i class="fas fa-search-plus"></i>
+      <div class="magnified-image">
+        <img src="./projectPicture/grade（whole41025）.jpeg" alt="NET" style="width: 400px; height: 600px;">
       </div>
+    </div>
+  </div>
+  <div class="image-container">
+    <img src="./projectPicture/41025.png" alt="NET" class="course-image">
+  </div>
+  <!-- IoTBay -->
+  <div class="project">
+    <i class="fas fa-network-wired icon"></i>
+    <span class="project-title">IoTBay</span>
+    <span class="grade">50/50</span>
+    <span class="image-tooltip">🔍</span> <!-- 悬浮提示图标 -->
+    <div class="tooltip-image">
+      <img src="./projectPicture/grade（IoTBay）.jpeg" alt="DataDynamics Image">
+    </div>
+  </div>
+</div>
+
       <!-- 41889 & 42889 Application Development in the iOS Environment -->
       <div class="course-container">
         <div class="course-title">41889 & 42889 Application Development in the iOS Environment</div>
