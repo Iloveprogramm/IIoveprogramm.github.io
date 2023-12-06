@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+  <link rel="stylesheet" href="233.css">
+  
   <style>
     body {
       padding-top: 2rem;
@@ -94,11 +96,161 @@
         opacity: 1;
       }
     }
+
+    body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        
+
+        
+
+        .text-animation-container {
+    color: #fff;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block; /* 添加这行使其适应现有布局 */
+}
+
+.text-animation-container::before {
+    content: 'Hello World I AM Chenjun Zheng'; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #eeea06;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #eeea06;
+    animation: move 5s linear infinite;
+    filter: drop-shadow(0 0 50px #eeea06);
+}
+
+@keyframes move {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.container {
+            text-align: center; /* 居中容器 */
+            max-width: 1200px; /* 限制最大宽度 */
+            margin: auto; /* 居中显示 */
+        }
+
+        .language {
+            display: inline-block; /* 使语言块水平排列 */
+            margin: 10px 20px; /* 添加一些间隔 */
+            vertical-align: top; /* 保证图标顶部对齐 */
+        }
+
+        .language img {
+            height: 80px; /* 所有图片的统一高度 */
+            width: auto; /* 宽度自动调整以保持宽高比 */
+            transition: transform 0.3s ease; /* 平滑过渡效果 */
+        }
+
+        .language h2 {
+            margin-top: 5px; /* 图片下方的标题间距 */
+        }
+
+        /* 图标的悬停效果 */
+        .language img:hover {
+            transform: scale(1.1); /* 放大效果 */
+        }
+
+        /* 媒体查询 - 调整图标间距和数量 */
+        @media (max-width: 1200px) {
+            .language { margin: 10px 15px; }
+        }
+
+        @media (max-width: 800px) {
+            .language { margin: 10px 10px; }
+        }
+
+        .skill-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space out the skill items evenly */
+    align-items: center; /* This ensures vertical alignment is centered */
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    margin: 10px; /* Adjust for spacing around each skill item */
+    flex-basis: calc(33% - 20px); /* Adjust the width of each skill item, minus margin */
+}
+
+.skill-name i {
+    font-size: 30px; /* Adjust icon size as needed */
+    margin-right: 10px; /* Adds space between the icon and text */
+}
+
+/* Skills Section */
+#skills .container {
+    padding: 20px;
+    background-color: #f8f9fa; /* 可以根据需要调整背景颜色 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果 */
+    margin-bottom: 250px; /* 增加到下一个部分的间距 */
+}
+
+/* Professional Skills Section */
+.skill-card {
+    background-color: #fff; /* 可以根据需要调整背景颜色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果 */
+}
+
+/* 调整技能图标的响应式布局 */
+@media (max-width: 768px) {
+    .language {
+        flex-basis: calc(50% - 20px); /* 在较小屏幕上每行显示两个 */
+    }
+}
+
+@media (max-width: 480px) {
+    .language {
+        flex-basis: 100%; /* 在非常小的屏幕上每行显示一个 */
+    }
+}
+
+
   </style>
 </head>
 <body>
   <section class="welcome-section">
-    <div>Welcome to My Website</div>
+    <div class="text-animation-container">
+      Hello World I AM Chenjun Zheng
+  </div>
     <div class="scroll-indicator"></div>
   </section>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -108,12 +260,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="#projects-section">Projects</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-          </li>
           <li class="nav-item">
               <a class="nav-link" href="#blog">Blog</a>
           </li>
@@ -139,10 +285,73 @@
     </div>
   </div>
 
-  <div style="height: 40vh;"></div>
-
   <div class="container mt-5" id="projects-section" data-aos="fade-up" data-aos-duration="1000">
-    <h2 class="text-center pro">Projects</h2>
+    <div class="loader">
+      <div class="loader-ring">
+          <div class="loader-sector">P</div>
+          <div class="loader-sector">R</div>
+          <div class="loader-sector">O</div>
+          <div class="loader-sector">J</div>
+          <div class="loader-sector">E</div>
+          <div class="loader-sector">C</div>
+          <div class="loader-sector">T</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+      </div>
+      <div class="loader-ring">
+          <div class="loader-sector">P</div>
+          <div class="loader-sector">R</div>
+          <div class="loader-sector">O</div>
+          <div class="loader-sector">J</div>
+          <div class="loader-sector">E</div>
+          <div class="loader-sector">C</div>
+          <div class="loader-sector">T</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector">.</div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+          <div class="loader-sector"></div>
+      </div>
+  </div>
 
     <div class="row"> 
         <div class="col-md-4">
@@ -293,7 +502,63 @@
 </div>
 
 
+<section id="skills" class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <header class="header">
+        <h1>Skills</h1>
+    </header>
+    <div class="container">
+        <div class="language">
+            <img src="./lanagage/html.png" alt="HTML Icon">
+            <h2>HTML</h2>
+        </div>
 
+        <div class="language">
+            <img src="./lanagage/css.png" alt="CSS Icon">
+            <h2>CSS</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/js.png" alt="JavaScript Icon">
+            <h2>JavaScript</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/processing.png" alt="Processing Icon">
+            <h2>Processing</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/php.png" alt="PHP Icon">
+            <h2>PHP</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/mysql.png" alt="MYSQL Icon">
+            <h2>MYSQL</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/swift.png" alt="SWIFT Icon">
+            <h2>SWIFT</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/java.png" alt="JAVA Icon">
+            <h2>JAVA</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/csharp.png" alt="C# Icon">
+            <h2>C#</h2>
+        </div>
+
+        <div class="language">
+            <img src="./lanagage/jsp.png" alt="JSP Icon">
+            <h2>JSP</h2>
+        </div>
+    </div>
+</section>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
