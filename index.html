@@ -264,6 +264,106 @@
   animation: bounceIn 1s ease;
 }
 
+.btn-download-resume {
+  font-size: 1.2em;
+  color: #fff;
+  background: linear-gradient(45deg, #6e48aa, #9d50bb);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.btn-download-resume::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.4s;
+}
+
+.btn-download-resume:hover, .btn-download-resume:focus {
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download-resume:hover::after, .btn-download-resume:focus::after {
+  left: 100%;
+}
+
+.btn-download-resume:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 基础导航栏样式 */
+.navbar {
+  background-color: #ffffff; /* 纯净的白色背景 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 细致的阴影 */
+  padding: 1rem 2rem; /* 宽敞的内边距 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代且专业的字体 */
+}
+
+/* 导航品牌样式 */
+.navbar-brand {
+  color: #212529; /* 深色字体，专业且易于阅读 */
+  font-weight: 600; /* 中等粗细的字体 */
+  font-size: 1.6em; /* 较大的字体大小 */
+  transition: transform 0.3s ease; /* 平滑的变换效果 */
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+  transform: scale(1.05); /* 轻微放大，增加交互感 */
+}
+
+/* 导航链接样式 */
+.navbar-nav .nav-link {
+  color: #212529; /* 深色字体，专业且易于阅读 */
+  margin: 0 1rem; /* 均匀的左右边距 */
+  transition: color 0.3s ease, padding 0.3s ease; /* 平滑的颜色和内边距过渡 */
+}
+
+/* 导航链接悬停效果 */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #0d6efd; /* 悬停时的颜色变化 */
+  padding-bottom: 3px; /* 增加底部内边距 */
+  border-bottom: 3px solid #0d6efd; /* 下划线效果 */
+  text-decoration: none;
+}
+
+/* 当前活动的导航链接样式 */
+.navbar-nav .active>.nav-link {
+  color: #0d6efd; /* 活动链接的颜色 */
+  font-weight: 500; /* 稍微加粗 */
+}
+
+/* 响应式折叠按钮 */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230d6efd' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* 响应式导航栏折叠后的样式 */
+.navbar-collapse {
+  background-color: #ffffff;
+}
+
+
+
 
   </style>
 </head>
@@ -287,6 +387,9 @@
           <li class="nav-item">
             <a class="nav-link" href="university_life.html">UNIT</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCJJ0cPseOZoYOngFh8NgE3Q" target="_blank">YouTube Project Showcase</a>
+          </li>
       </ul>
   </div>
   </nav>
@@ -306,9 +409,10 @@
         As I seek employment in 2024, I aim to apply my university-acquired skills in a practical setting, contributing value to my future employer. For more about my educational background and skills, feel free to download my resume or visit my personal webpage at the links provided.</p>
       <p class="lead" data-aos="fade-up">Contact Info:</p>
       <ul data-aos="fade-up">
-        <li><i class="fas fa-phone"></i> Phone: 0451100403</li>
+        <li><i class="fas fa-phone"></i> Phone: 0438792492</li>
         <li><i class="fas fa-envelope"></i> Email: chenjunzhengjim@gmail.com</li>
       </ul>
+      <a href="path_to_your_resume.pdf" class="btn btn-download-resume" download="Chenjun_Zheng_Resume.pdf">Download My Resume</a>
     </div>
   </div>
 
