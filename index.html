@@ -24,12 +24,15 @@
     object-fit: cover;
     display: block; 
 }
-    .profile-img {
-      max-width: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      animation: fade-in 1s; 
-    }
+.profile-img {
+  width: 270px; 
+  height: 270px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  overflow: hidden; 
+  margin-bottom: 1rem;
+  animation: fade-in 1s; 
+}
     .jumbotron {
       transition: all 0.2s ease-in-out;
     }
@@ -132,7 +135,7 @@
     text-transform: uppercase;
     font-weight: bolder;
     position: relative;
-    display: inline-block; /* 添加这行使其适应现有布局 */
+    display: inline-block; 
 }
 
 .text-animation-container::before {
@@ -159,33 +162,33 @@
 }
 
 .container {
-            text-align: center; /* 居中容器 */
-            max-width: 1200px; /* 限制最大宽度 */
-            margin: auto; /* 居中显示 */
+            text-align: center; 
+            max-width: 1200px; 
+            margin: auto; 
         }
 
         .language {
-            display: inline-block; /* 使语言块水平排列 */
-            margin: 10px 20px; /* 添加一些间隔 */
-            vertical-align: top; /* 保证图标顶部对齐 */
+            display: inline-block; 
+            margin: 10px 20px;
+            vertical-align: top; 
         }
 
         .language img {
-            height: 80px; /* 所有图片的统一高度 */
-            width: auto; /* 宽度自动调整以保持宽高比 */
-            transition: transform 0.3s ease; /* 平滑过渡效果 */
+            height: 80px;
+            width: auto; 
+            transition: transform 0.3s ease; 
         }
 
         .language h2 {
-            margin-top: 5px; /* 图片下方的标题间距 */
+            margin-top: 5px; 
         }
 
-        /* 图标的悬停效果 */
+     
         .language img:hover {
-            transform: scale(1.1); /* 放大效果 */
+            transform: scale(1.1); 
         }
 
-        /* 媒体查询 - 调整图标间距和数量 */
+        
         @media (max-width: 1200px) {
             .language { margin: 10px 15px; }
         }
@@ -197,7 +200,7 @@
         .skill-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* This will space out the skill items evenly */
+    justify-content: space-around; 
     align-items: center; /* This ensures vertical alignment is centered */
 }
 
@@ -402,7 +405,7 @@
   </nav>
   <div class="container mb-5" data-aos="fade-up" data-aos-duration="1000">
     <div class="jumbotron text-center">
-      <img src="me.jpg" alt="Chenjun Zheng" class="profile-img">
+      <img src="me.jpeg" alt="Chenjun Zheng" class="profile-img">
       <h1 class="display-4" data-aos="fade-up">Chenjun Zheng | Full Stack Developer</h1>
       <p class="lead" data-aos="fade-up"><a href="https://en.wikipedia.org/wiki/University_of_Technology_Sydney" target="_blank">University of Technology Sydney</a> | Bachelor of Science in Information Technology</p>
       <p class="lead" data-aos="fade-up">World Ranking: <span id="rank"></span></p>
