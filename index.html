@@ -365,6 +365,41 @@
   background-color: #ffffff;
 }
 
+/* 梯队标签基础样式 */
+.tier {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-left: 10px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 亮色边框 */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* 深色阴影 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 文字阴影 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 梯队1样式 - 渐变背景 */
+.tier-one {
+    background: linear-gradient(135deg, #6dd5ed, #28a745);
+}
+
+/* 梯队2样式 - 渐变背景 */
+.tier-two {
+    background: linear-gradient(135deg, #ff6b6b, #dc3545);
+}
+
+/* 动态悬停效果 */
+.tier:hover {
+    transform: scale(1.1); /* 放大效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 增加阴影 */
+}
+
+/* 图标样式 */
+.tier i {
+    margin-right: 5px; /* 图标和文字间距 */
+}
 
 
 
@@ -505,31 +540,38 @@
   </div>
 
     <div class="row"> 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="./projectPicture/OnlineGroceryStore.png" class="card-img-top" alt="Project 1">
-                <div class="card-body">
-                    <h5 class="card-title">Online Grocery Store</h5>
-                    <p class="card-text">An e-commerce platform for users to conveniently browse and purchase groceries. Developed using <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.</p></p>
-                    <div class="btn-group" role="group" aria-label="Project Links">
-                        <a href="https://github.com/Iloveprogramm/Online-Grocery-Store-" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=9LE65U2C4Us" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="link-to-blog" class="btn btn-outline-primary" target="_blank" title="Blog">
-                            <i class="fas fa-blog"></i>
-                        </a>
-                    </div>
+      <div class="col-md-4">
+        <div class="card">
+            <img src="./projectPicture/BookOnlineOrderSystem.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Book Online Order System<span class="tier tier-one">Tier 1</span></h5>
+                <p class="card-text">
+                    A platform for book enthusiasts to explore, review, and order their favorite books. Created with 
+                    <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, 
+                    <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, 
+                    <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, 
+                    and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.
+                </p>
+                <div class="btn-group" role="group" aria-label="Project Links">
+                    <a href="https://github.com/Iloveprogramm/Online-Book-Order-System" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=j-UARIFWZSw" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                        <i class="fas fa-blog"></i>
+                    </a>
                 </div>
             </div>
+            
         </div>
+    </div>
         <div class="col-md-4">
-            <div class="card">
+            <div class="card" >
                 <img src="./projectPicture/OnlineCarRentalSystem.png" class="card-img-top" alt="Project 2">
                 <div class="card-body">
-                    <h5 class="card-title">Online Car Rental System</h5>
+                    <h5 class="card-title">Online Car Rental System<span class="tier tier-one">Tier 1</span></h5>
                     <p class="card-text">
                         A digital platform to rent cars with a seamless user experience. Built with 
                         <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, 
@@ -555,76 +597,40 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
-                <img src="./projectPicture/BookOnlineOrderSystem.png" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h5 class="card-title">Book Online Order System</h5>
-                    <p class="card-text">
-                        A platform for book enthusiasts to explore, review, and order their favorite books. Created with 
-                        <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, 
-                        <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, 
-                        <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, 
-                        and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.
-                    </p>
-                    <div class="btn-group" role="group" aria-label="Project Links">
-                        <a href="https://github.com/Iloveprogramm/Online-Book-Order-System" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=j-UARIFWZSw" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                            <i class="fas fa-blog"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+          <div class="card">
+              <img src="./projectPicture/OnlineGroceryStore.png" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                  <h5 class="card-title">Online Grocery Store<span class="tier tier-one">Tier 1</span></h5>
+                  <p class="card-text">An e-commerce platform for users to conveniently browse and purchase groceries. Developed using <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.</p></p>
+                  <div class="btn-group" role="group" aria-label="Project Links">
+                      <a href="https://github.com/Iloveprogramm/Online-Grocery-Store-" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=9LE65U2C4Us" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="link-to-blog" class="btn btn-outline-primary" target="_blank" title="Blog">
+                          <i class="fas fa-blog"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div> 
 
-    <div class="row mt-4 reveal">
-        <div class="col-md-4">
-           
-            <div class="card">
-                <img src="./projectPicture/CarRentalSystem.jpeg" class="card-img-top" alt="Project 4">
-                <div class="card-body">
-                    <h5 class="card-title">Car Rental System</h5>
-                    <p class="card-text">
-                        A mobile application offering users the ability to rent cars on-the-go. Developed for 
-                        <strong><a href="https://www.google.com/search?q=iOS" target="_blank">iOS</a></strong>.
-                    </p>
-                    <div class="btn-group" role="group" aria-label="Project Links">
-                        <a href="https://github.com/Iloveprogramm/Assessment-task-3-Group-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=2lb1IH-P6c4" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <!-- Add your blog link button here -->
-                        <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                            <i class="fas fa-blog"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="col-md-4">
-
-          <div class="card">
-              <img src="./projectPicture/Interactive Mirror.png" class="card-img-top" alt="Project 4">
-              <div class="card-body">
-                <h5 class="card-title">Interactive Mirror</h5>
-                <p class="card-text">
-                    A unique mirror interface with interactive features. Crafted with 
-                    <strong><a href="https://www.google.com/search?q=Processing" target="_blank">Processing</a></strong>.
-                </p>
+    <div class="row mt-4 reveal"> 
+      <div class="col-md-4">
+       
+        <div class="card">
+            <img src="./projectPicture/Interactive Musician.png" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+                <h5 class="card-title">Interactive Musician<span class="tier tier-one">Tier 1</span></h5>
+                <p class="card-text">Processing</p>
                 <div class="btn-group" role="group" aria-label="Project Links">
-                    <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                    <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                    <a href="https://www.youtube.com/watch?v=FqcUiQCaFD0" class="btn btn-outline-danger" target="_blank" title="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
                     <!-- Add your blog link button here -->
@@ -634,13 +640,37 @@
                 </div>
             </div>
             
-          </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+      <div class="card">
+          <img src="./projectPicture/IoTBay.png" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">IoTBay<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">An online IoT device shopping platform built with Java and JSP, offering a range of smart home devices for browsing and purchasing. Built with: <a href="https://www.google.com/search?q=java" target="_blank"><strong>Java</strong></a> and <a href="https://www.google.com/search?q=jsp" target="_blank"><strong>JSP</strong></a>.</p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+                <a href="https://github.com/Iloveprogramm/Bubble-Game" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtu.be/QsO4aNXrckw" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <!-- Add your blog link button here -->
+                <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                    <i class="fas fa-blog"></i>
+                </a>
+            </div>
+        </div>
+        
       </div>
+  </div>
+       
       <div class="col-md-4">
         <div class="card">
           <img src="./projectPicture/DataDynamics.png" class="card-img-top" alt="DataDynamics Project">
           <div class="card-body">
-            <h5 class="card-title">DataDynamics</h5>
+            <h5 class="card-title">DataDynamics<span class="tier tier-two">Tier 2</span></h5>
             <p class="card-text">
                 A data visualization project that visually represents complex data. Built using 
                 <strong><a href="https://www.google.com/search?q=Python" target="_blank">Processing</a></strong>.
@@ -662,37 +692,41 @@
     </div>
       
     </div> 
-
-    <div class="row mt-4 reveal"> 
+    <div class="row mt-4 reveal">
       <div class="col-md-4">
-       
-        <div class="card">
-            <img src="./projectPicture/Interactive Musician.png" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-                <h5 class="card-title">Interactive Musician</h5>
-                <p class="card-text">Processing</p>
-                <div class="btn-group" role="group" aria-label="Project Links">
-                    <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=FqcUiQCaFD0" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <!-- Add your blog link button here -->
-                    <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                        <i class="fas fa-blog"></i>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+         
+          <div class="card">
+              <img src="./projectPicture/CarRentalSystem.jpeg" class="card-img-top" alt="Project 4">
+              <div class="card-body">
+                  <h5 class="card-title">Car Rental System<span class="tier tier-two">Tier 2</span></h5>
+                  <p class="card-text">
+                      A mobile application offering users the ability to rent cars on-the-go. Developed for 
+                      <strong><a href="https://www.google.com/search?q=iOS" target="_blank">iOS</a></strong>.
+                  </p>
+                  <div class="btn-group" role="group" aria-label="Project Links">
+                      <a href="https://github.com/Iloveprogramm/Assessment-task-3-Group-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.youtube.com/watch?v=2lb1IH-P6c4" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                      <!-- Add your blog link button here -->
+                      <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                          <i class="fas fa-blog"></i>
+                      </a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+
+   
     <div class="col-md-4">
 
       <div class="card">
           <img src="./projectPicture/BubbleGame.png" class="card-img-top" alt="Project 4">
           <div class="card-body">
-            <h5 class="card-title">Bubble Game</h5>
+            <h5 class="card-title">Bubble Game<span class="tier tier-two">Tier 2</span></h5>
             <p class="card-text">
                 A simple iOS game where users tap on bubbles appearing on the screen to score points. Built with: 
                 <a href="https://www.google.com/search?q=Ios" target="_blank"><strong>iOS</strong></a>.
@@ -713,56 +747,113 @@
         
       </div>
   </div>
+
   <div class="col-md-4">
 
     <div class="card">
-        <img src="./projectPicture/IoTBay.png" class="card-img-top" alt="Project 4">
+        <img src="./projectPicture/Interactive Mirror.png" class="card-img-top" alt="Project 4">
         <div class="card-body">
-            <h5 class="card-title">IoTBay</h5>
-            <p class="card-text">An online IoT device shopping platform built with Java and JSP, offering a range of smart home devices for browsing and purchasing. Built with: <a href="https://www.google.com/search?q=java" target="_blank"><strong>Java</strong></a> and <a href="https://www.google.com/search?q=jsp" target="_blank"><strong>JSP</strong></a>.</p>
-            <a href="https://github.com/Iloveprogramm/IOD-Bay-ISD-assignment" class="btn btn-primary"><i class="fab fa-github"></i> Go to Project</a>
-        </div>
-    </div>
-</div>
-    </div>
-
-    <div class="row mt-4 reveal"> 
-      <div class="col-md-4">
-    
-        <div class="card">
-            <img src="./projectPicture/Hospital-Management-System.jpeg" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-                <h5 class="card-title">Hospital-Management-System</h5>
-                <p class="card-text">C#</p>
-                <a href="https://github.com/Iloveprogramm/Hospital-Management-System-Console-Application" class="btn btn-primary"><i class="fab fa-github"></i> Go to Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-
-      <div class="card">
-          <img src="./projectPicture/BankingSystem.jpeg" class="card-img-top" alt="Project 4">
-          <div class="card-body">
-              <h5 class="card-title">Simple Banking System</h5>
-              <p class="card-text">C#</p>
-              <a href="https://github.com/Iloveprogramm/Bank-System-Console-Application" class="btn btn-primary"><i class="fab fa-github"></i> Go to Project</a>
+          <h5 class="card-title">Interactive Mirror<span class="tier tier-two">Tier 2</span></h5>
+          <p class="card-text">
+              A unique mirror interface with interactive features. Crafted with 
+              <strong><a href="https://www.google.com/search?q=Processing" target="_blank">Processing</a></strong>.
+          </p>
+          <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                  <i class="fab fa-youtube"></i>
+              </a>
+              <!-- Add your blog link button here -->
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                  <i class="fas fa-blog"></i>
+              </a>
           </div>
       </div>
-  </div>
-  <div class="col-md-4">
-   
-    <div class="card">
-        <img src="./projectPicture/TextEditor.jpeg" class="card-img-top" alt="Project 4">
-        <div class="card-body">
-            <h5 class="card-title">TextEditor</h5>
-            <p class="card-text">C#</p>
-            <a href="https://github.com/Iloveprogramm/Text-Editor-Windows-Form-Application" class="btn btn-primary"><i class="fab fa-github"></i> Go to Project</a>
+      
+    </div>
+</div>
+
+<div class="col-md-4">
+
+  <div class="card">
+      <img src="./projectPicture/Hospital-Management-System.jpeg" class="card-img-top" alt="Project 4">
+      <div class="card-body">
+        <h5 class="card-title">Hospital-Management-System<span class="tier tier-two">Tier 2</span></h5>
+        <p class="card-text">
+          C#
+        </p>
+        <div class="btn-group" role="group" aria-label="Project Links">
+            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <!-- Add your blog link button here -->
+            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+            </a>
         </div>
     </div>
+    
+  </div>
 </div>
-    </div>
 
+<div class="col-md-4">
+
+  <div class="card">
+      <img src="./projectPicture/BankingSystem.jpeg" class="card-img-top" alt="Project 4">
+      <div class="card-body">
+        <h5 class="card-title">Simple Banking System<span class="tier tier-two">Tier 2</span></h5>
+        <p class="card-text">
+          C#
+        </p>
+        <div class="btn-group" role="group" aria-label="Project Links">
+            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <!-- Add your blog link button here -->
+            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+            </a>
+        </div>
+    </div>
+    
+  </div>
 </div>
+
+<div class="col-md-4">
+
+  <div class="card">
+      <img src="./projectPicture/TextEditor.jpeg" class="card-img-top" alt="Project 4">
+      <div class="card-body">
+        <h5 class="card-title">TextEditor<span class="tier tier-two">Tier 2</span></h5>
+        <p class="card-text">
+          C#
+        </p>
+        <div class="btn-group" role="group" aria-label="Project Links">
+            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <!-- Add your blog link button here -->
+            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+            </a>
+        </div>
+    </div>
+    
+  </div>
+</div>
+
+    
 
 
 <section id="skills" class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
