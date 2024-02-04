@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
   <link rel="stylesheet" href="233.css">
-  
+
   <style>
     body {
       padding-top: 2rem;
       padding-bottom: 2rem;
       background-color: #f5f5f5;
     }
+
     .navbar {
       margin-bottom: 2rem;
     }
+
     .card-img-top {
-    height: 200px;  
-    width: 100%;  
-    object-fit: cover;
-    display: block; 
-}
-.profile-img {
-  width: 270px; 
-  height: 270px; 
-  border-radius: 50%;
-  object-fit: cover; 
-  overflow: hidden; 
-  margin-bottom: 1rem;
-  animation: fade-in 1s; 
-}
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      object-fit: cover;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      animation: fade-in 1s;
+    }
+
     .jumbotron {
       transition: all 0.2s ease-in-out;
     }
+
     .jumbotron:hover {
       transform: scale(1.01);
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+
     .welcome-section {
       height: 100vh;
       display: flex;
@@ -52,6 +59,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
       position: relative;
     }
+
     .welcome-section::before {
       content: '';
       position: absolute;
@@ -61,6 +69,7 @@
       left: 0;
       background: rgba(0, 0, 0, .6);
     }
+
     .scroll-indicator {
       position: absolute;
       bottom: 10%;
@@ -70,6 +79,7 @@
       border-radius: 50%;
       animation: scroll 2s infinite;
     }
+
     .scroll-indicator:before {
       content: '';
       position: absolute;
@@ -80,341 +90,348 @@
       background: #fff;
       animation: scroll 2s infinite;
     }
+
     .pro {
-    font-family: 'Arial', sans-serif;   
-    font-size: 200px;                   
-    color: #2C3E50;                  
-    transition: transform 0.5s;        
-    will-change: transform;            
+      font-family: 'Arial', sans-serif;
+      font-size: 200px;
+      color: #2C3E50;
+      transition: transform 0.5s;
+      will-change: transform;
     }
+
     @keyframes scroll {
-      0% {transform: translateY(0); opacity: 1;}
-      100% {transform: translateY(20px); opacity: 0;}
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
     }
+
     @keyframes fade-in {
       0% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
     }
 
     body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #212529;
-            line-height: 1.4;
-        }
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #212529;
+      line-height: 1.4;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
 
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .header h1 {
-            font-size: 2.5rem;
-            color: #333;
-        }
+    .header h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
 
-        
 
-        
 
-        .text-animation-container {
-    color: #fff;
-    font-size: 80px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    position: relative;
-    display: inline-block; 
-}
 
-.text-animation-container::before {
-    content: 'Hello World I AM Chenjun Zheng'; 
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #eeea06;
-    width: 60px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 5px solid #eeea06;
-    animation: move 5s linear infinite;
-    filter: drop-shadow(0 0 50px #eeea06);
-}
 
-@keyframes move {
-    0% {
+    .text-animation-container {
+      color: #fff;
+      font-size: 80px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      position: relative;
+      display: inline-block;
+    }
+
+    .text-animation-container::before {
+      content: 'Hello World I AM Chenjun Zheng';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #eeea06;
+      width: 60px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 5px solid #eeea06;
+      animation: move 5s linear infinite;
+      filter: drop-shadow(0 0 50px #eeea06);
+    }
+
+    @keyframes move {
+      0% {
         width: 0;
-    }
-    100% {
+      }
+
+      100% {
         width: 100%;
+      }
     }
-}
 
-.container {
-            text-align: center; 
-            max-width: 1200px; 
-            margin: auto; 
-        }
+    .container {
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-        .language {
-            display: inline-block; 
-            margin: 10px 20px;
-            vertical-align: top; 
-        }
-
-        .language img {
-            height: 80px;
-            width: auto; 
-            transition: transform 0.3s ease; 
-        }
-
-        .language h2 {
-            margin-top: 5px; 
-        }
-
-     
-        .language img:hover {
-            transform: scale(1.1); 
-        }
-
-        
-        @media (max-width: 1200px) {
-            .language { margin: 10px 15px; }
-        }
-
-        @media (max-width: 800px) {
-            .language { margin: 10px 10px; }
-        }
-
-        .skill-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    align-items: center; /* This ensures vertical alignment is centered */
-}
-
-.skill-name {
-    display: flex;
-    align-items: center;
-    margin: 10px; /* Adjust for spacing around each skill item */
-    flex-basis: calc(33% - 20px); /* Adjust the width of each skill item, minus margin */
-}
-
-.skill-name i {
-    font-size: 30px; /* Adjust icon size as needed */
-    margin-right: 10px; /* Adds space between the icon and text */
-}
-
-/* Skills Section */
-#skills .container {
-    padding: 20px;
-    background-color: #f8f9fa; /* 可以根据需要调整背景颜色 */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果 */
-    margin-bottom: 250px; /* 增加到下一个部分的间距 */
-}
-
-/* Professional Skills Section */
-.skill-card {
-    background-color: #fff; /* 可以根据需要调整背景颜色 */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 可选的阴影效果 */
-}
-
-/* 调整技能图标的响应式布局 */
-@media (max-width: 768px) {
     .language {
-        flex-basis: calc(50% - 20px); /* 在较小屏幕上每行显示两个 */
+      display: inline-block;
+      margin: 10px 20px;
+      vertical-align: top;
     }
-}
 
-@media (max-width: 480px) {
-    .language {
-        flex-basis: 100%; /* 在非常小的屏幕上每行显示一个 */
+    .language img {
+      height: 80px;
+      width: auto;
+      transition: transform 0.3s ease;
     }
-}
 
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  70% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.bounceIn {
-  animation: bounceIn 1s ease;
-}
-
-.btn-download-resume {
-  font-size: 1.2em;
-  color: #fff;
-  background: linear-gradient(45deg, #6e48aa, #9d50bb);
-  border: none;
-  border-radius: 30px;
-  padding: 10px 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-  letter-spacing: 1px;
-}
-
-.btn-download-resume::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: all 0.4s;
-}
-
-.btn-download-resume:hover, .btn-download-resume:focus {
-  background: linear-gradient(to right, #9d50bb, #6e48aa);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.btn-download-resume:hover::after, .btn-download-resume:focus::after {
-  left: 100%;
-}
-
-.btn-download-resume:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* 基础导航栏样式 */
-.navbar {
-  background-color: #ffffff; /* 纯净的白色背景 */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 细致的阴影 */
-  padding: 1rem 2rem; /* 宽敞的内边距 */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代且专业的字体 */
-}
-
-/* 导航品牌样式 */
-.navbar-brand {
-  color: #212529; /* 深色字体，专业且易于阅读 */
-  font-weight: 600; /* 中等粗细的字体 */
-  font-size: 1.6em; /* 较大的字体大小 */
-  transition: transform 0.3s ease; /* 平滑的变换效果 */
-}
-
-.navbar-brand:hover, .navbar-brand:focus {
-  transform: scale(1.05); /* 轻微放大，增加交互感 */
-}
-
-/* 导航链接样式 */
-.navbar-nav .nav-link {
-  color: #212529; /* 深色字体，专业且易于阅读 */
-  margin: 0 1rem; /* 均匀的左右边距 */
-  transition: color 0.3s ease, padding 0.3s ease; /* 平滑的颜色和内边距过渡 */
-}
-
-/* 导航链接悬停效果 */
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  color: #0d6efd; /* 悬停时的颜色变化 */
-  padding-bottom: 3px; /* 增加底部内边距 */
-  border-bottom: 3px solid #0d6efd; /* 下划线效果 */
-  text-decoration: none;
-}
-
-/* 当前活动的导航链接样式 */
-.navbar-nav .active>.nav-link {
-  color: #0d6efd; /* 活动链接的颜色 */
-  font-weight: 500; /* 稍微加粗 */
-}
-
-/* 响应式折叠按钮 */
-.navbar-toggler {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230d6efd' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* 响应式导航栏折叠后的样式 */
-.navbar-collapse {
-  background-color: #ffffff;
-}
-
-/* 梯队标签基础样式 */
-.tier {
-    display: inline-block;
-    padding: 4px 12px;
-    margin-left: 10px;
-    font-size: 0.9em;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* 亮色边框 */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* 深色阴影 */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 文字阴影 */
-    transition: all 0.3s ease; /* 平滑过渡效果 */
-}
-
-/* 梯队1样式 - 渐变背景 */
-.tier-one {
-    background: linear-gradient(135deg, #6dd5ed, #28a745);
-}
-
-/* 梯队2样式 - 渐变背景 */
-.tier-two {
-    background: linear-gradient(135deg, #ff6b6b, #dc3545);
-}
-
-/* 动态悬停效果 */
-.tier:hover {
-    transform: scale(1.1); /* 放大效果 */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 增加阴影 */
-}
-
-/* 图标样式 */
-.tier i {
-    margin-right: 5px; /* 图标和文字间距 */
-}
+    .language h2 {
+      margin-top: 5px;
+    }
 
 
+    .language img:hover {
+      transform: scale(1.1);
+    }
 
+
+    @media (max-width: 1200px) {
+      .language {
+        margin: 10px 15px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .language {
+        margin: 10px 10px;
+      }
+    }
+
+    .skill-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .skill-name {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      flex-basis: calc(33% - 20px);
+    }
+
+    .skill-name i {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    /* Skills Section */
+    #skills .container {
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 250px;
+    }
+
+    .skill-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .language {
+        flex-basis: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .language {
+        flex-basis: 100%;
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      70% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .bounceIn {
+      animation: bounceIn 1s ease;
+    }
+
+    .btn-download-resume {
+      font-size: 1.2em;
+      color: #fff;
+      background: linear-gradient(45deg, #6e48aa, #9d50bb);
+      border: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1px;
+    }
+
+    .btn-download-resume::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transition: all 0.4s;
+    }
+
+    .btn-download-resume:hover,
+    .btn-download-resume:focus {
+      background: linear-gradient(to right, #9d50bb, #6e48aa);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-download-resume:hover::after,
+    .btn-download-resume:focus::after {
+      left: 100%;
+    }
+
+    .btn-download-resume:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar-brand {
+      color: #212529;
+      font-weight: 600;
+      font-size: 1.6em;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      color: #212529;
+      margin: 0 1rem;
+      transition: color 0.3s ease, padding 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #0d6efd;
+      padding-bottom: 3px;
+      border-bottom: 3px solid #0d6efd;
+      text-decoration: none;
+    }
+
+    .navbar-nav .active>.nav-link {
+      color: #0d6efd;
+      font-weight: 500;
+    }
+
+    .navbar-toggler {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230d6efd' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-collapse {
+      background-color: #ffffff;
+    }
+
+    .tier {
+      display: inline-block;
+      padding: 4px 12px;
+      margin-left: 10px;
+      font-size: 0.9em;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .tier-one {
+      background: linear-gradient(135deg, #6dd5ed, #28a745);
+    }
+
+    .tier-two {
+      background: linear-gradient(135deg, #ff6b6b, #dc3545);
+    }
+
+    .tier:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .tier i {
+      margin-right: 5px;
+    }
   </style>
 </head>
+
 <body>
   <section class="welcome-section">
     <div class="text-animation-container">
       Hello World I AM Chenjun Zheng
-  </div>
+    </div>
     <div class="scroll-indicator"></div>
   </section>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Chenjun Zheng</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -434,7 +451,6 @@
             <i class="fab fa-youtube"></i> YouTube Project Showcase
           </a>
         </li>
-        <!-- New Nav Items -->
         <li class="nav-item">
           <a class="nav-link" href="#projects-section">
             <i class="fas fa-project-diagram"></i> Projects
@@ -452,596 +468,629 @@
     <div class="jumbotron text-center">
       <img src="me.jpeg" alt="Chenjun Zheng" class="profile-img">
       <h1 class="display-4" data-aos="fade-up">Chenjun Zheng | Full Stack Developer</h1>
-      <p class="lead" data-aos="fade-up"><a href="https://en.wikipedia.org/wiki/University_of_Technology_Sydney" target="_blank">University of Technology Sydney</a> | Bachelor of Science in Information Technology</p>
+      <p class="lead" data-aos="fade-up"><a href="https://en.wikipedia.org/wiki/University_of_Technology_Sydney"
+          target="_blank">University of Technology Sydney</a> | Bachelor of Science in Information Technology</p>
       <p class="lead" data-aos="fade-up">World Ranking: <span id="rank"></span></p>
       <hr class="my-4">
       <p class="lead" data-aos="fade-up">Hello,
 
-        I'm Chenjun Zheng, a University of Technology Sydney graduate with a Bachelor of Science in Information Technology, specialized in Enterprise Software Development, as of November 2023. Since moving to Australia at 16, I've immersed myself in the local culture while developing a strong foundation in IT.
-        
-        My passion lies in programming and software development, with several personal projects under my belt demonstrating my skills. Proficient in various programming languages and tools, you can view my work on my website linked below.
-        
-        As I seek employment in 2024, I aim to apply my university-acquired skills in a practical setting, contributing value to my future employer. For more about my educational background and skills, feel free to download my resume or visit my personal webpage at the links provided.</p>
+        I'm Chenjun Zheng, a University of Technology Sydney graduate with a Bachelor of Science in Information
+        Technology, specialized in Enterprise Software Development, as of November 2023. Since moving to Australia at
+        16, I've immersed myself in the local culture while developing a strong foundation in IT.
+
+        My passion lies in programming and software development, with several personal projects under my belt
+        demonstrating my skills. Proficient in various programming languages and tools, you can view my work on my
+        website linked below.
+
+        As I seek employment in 2024, I aim to apply my university-acquired skills in a practical setting, contributing
+        value to my future employer. For more about my educational background and skills, feel free to download my
+        resume or visit my personal webpage at the links provided.</p>
       <p class="lead" data-aos="fade-up">Contact Info:</p>
       <ul data-aos="fade-up">
         <li><i class="fas fa-phone"></i> Phone: 0438792492</li>
         <li><i class="fas fa-envelope"></i> Email: chenjunzhengjim@gmail.com</li>
       </ul>
-      <a href="./IT resume.pdf" class="btn btn-download-resume" download="Chenjun_Zheng_Resume.pdf">Download My Resume</a>
+      <a href="./IT resume.pdf" class="btn btn-download-resume" download="Chenjun_Zheng_Resume.pdf">Download My
+        Resume</a>
     </div>
   </div>
 
   <div class="container mt-5" id="projects-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="loader">
       <div class="loader-ring">
-          <div class="loader-sector">P</div>
-          <div class="loader-sector">R</div>
-          <div class="loader-sector">O</div>
-          <div class="loader-sector">J</div>
-          <div class="loader-sector">E</div>
-          <div class="loader-sector">C</div>
-          <div class="loader-sector">T</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
+        <div class="loader-sector">P</div>
+        <div class="loader-sector">R</div>
+        <div class="loader-sector">O</div>
+        <div class="loader-sector">J</div>
+        <div class="loader-sector">E</div>
+        <div class="loader-sector">C</div>
+        <div class="loader-sector">T</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
       </div>
       <div class="loader-ring">
-          <div class="loader-sector">P</div>
-          <div class="loader-sector">R</div>
-          <div class="loader-sector">O</div>
-          <div class="loader-sector">J</div>
-          <div class="loader-sector">E</div>
-          <div class="loader-sector">C</div>
-          <div class="loader-sector">T</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector">.</div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
-          <div class="loader-sector"></div>
+        <div class="loader-sector">P</div>
+        <div class="loader-sector">R</div>
+        <div class="loader-sector">O</div>
+        <div class="loader-sector">J</div>
+        <div class="loader-sector">E</div>
+        <div class="loader-sector">C</div>
+        <div class="loader-sector">T</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector">.</div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
+        <div class="loader-sector"></div>
       </div>
-  </div>
+    </div>
 
-    <div class="row"> 
+    <div class="row">
       <div class="col-md-4">
         <div class="card">
-            <img src="./projectPicture/BookOnlineOrderSystem.png" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-                <h5 class="card-title">Book Online Order System<span class="tier tier-one">Tier 1</span></h5>
-                <p class="card-text">
-                    A platform for book enthusiasts to explore, review, and order their favorite books. Created with 
-                    <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, 
-                    <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, 
-                    <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, 
-                    and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.
-                </p>
-                <div class="btn-group" role="group" aria-label="Project Links">
-                    <a href="https://github.com/Iloveprogramm/Online-Book-Order-System" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=j-UARIFWZSw" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="bookonlineordersystemBLOG.html" class="btn btn-outline-primary" target="_blank" title="Blog">
-                      <i class="fas fa-blog"></i>
-                  </a>                  
-                </div>
+          <img src="./projectPicture/BookOnlineOrderSystem.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Book Online Order System<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">
+              A platform for book enthusiasts to explore, review, and order their favorite books. Created with
+              <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>,
+              <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>,
+              <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>,
+              and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Online-Book-Order-System" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=j-UARIFWZSw" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="bookonlineordersystemBLOG.html" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
             </div>
-            
-        </div>
-    </div>
-        <div class="col-md-4">
-            <div class="card" >
-                <img src="./projectPicture/OnlineCarRentalSystem.png" class="card-img-top" alt="Project 2">
-                <div class="card-body">
-                    <h5 class="card-title">Online Car Rental System<span class="tier tier-one">Tier 1</span></h5>
-                    <p class="card-text">
-                        A digital platform to rent cars with a seamless user experience. Built with 
-                        <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, 
-                        <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, 
-                        <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, 
-                        <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>, 
-                        and <strong><a href="https://www.google.com/search?q=Ajax" target="_blank">Ajax</a></strong>.
-                    </p>
-                    <div class="btn-group" role="group" aria-label="Project Links">
-                        <a href="https://github.com/Iloveprogramm/Online-Car-Rental-System" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=L3T_ofHz27s" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <!-- Add your blog link button here -->
-                        <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                            <i class="fas fa-blog"></i>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-              <img src="./projectPicture/OnlineGroceryStore.png" class="card-img-top" alt="Project 1">
-              <div class="card-body">
-                  <h5 class="card-title">Online Grocery Store<span class="tier tier-one">Tier 1</span></h5>
-                  <p class="card-text">An e-commerce platform for users to conveniently browse and purchase groceries. Developed using <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>, <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, and <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.</p></p>
-                  <div class="btn-group" role="group" aria-label="Project Links">
-                      <a href="https://github.com/Iloveprogramm/Online-Grocery-Store-" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                          <i class="fab fa-github"></i>
-                      </a>
-                      <a href="https://www.youtube.com/watch?v=9LE65U2C4Us" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                          <i class="fab fa-youtube"></i>
-                      </a>
-                      <a href="link-to-blog" class="btn btn-outline-primary" target="_blank" title="Blog">
-                          <i class="fas fa-blog"></i>
-                      </a>
-                  </div>
-              </div>
           </div>
-      </div>
-    </div> 
 
-    <div class="row mt-4 reveal"> 
-      <div class="col-md-4">
-       
-        <div class="card">
-            <img src="./projectPicture/Interactive Musician.png" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-                <h5 class="card-title">Interactive Musician<span class="tier tier-one">Tier 1</span></h5>
-                <p class="card-text">Processing</p>
-                <div class="btn-group" role="group" aria-label="Project Links">
-                    <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=FqcUiQCaFD0" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <!-- Add your blog link button here -->
-                    <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                        <i class="fas fa-blog"></i>
-                    </a>
-                </div>
-            </div>
-            
         </div>
-    </div>
-    <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./projectPicture/OnlineCarRentalSystem.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Online Car Rental System<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">
+              A digital platform to rent cars with a seamless user experience. Built with
+              <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>,
+              <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>,
+              <strong><a href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>,
+              <strong><a href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>,
+              and <strong><a href="https://www.google.com/search?q=Ajax" target="_blank">Ajax</a></strong>.
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Online-Car-Rental-System" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=L3T_ofHz27s" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
+            </div>
+          </div>
 
-      <div class="card">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./projectPicture/OnlineGroceryStore.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Online Grocery Store<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">An e-commerce platform for users to conveniently browse and purchase groceries.
+              Developed using <strong><a href="https://www.google.com/search?q=HTML" target="_blank">HTML</a></strong>,
+              <strong><a href="https://www.google.com/search?q=CSS" target="_blank">CSS</a></strong>, <strong><a
+                  href="https://www.google.com/search?q=JS" target="_blank">JS</a></strong>, and <strong><a
+                  href="https://www.google.com/search?q=PHP" target="_blank">PHP</a></strong>.
+            </p>
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Online-Grocery-Store-" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=9LE65U2C4Us" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="link-to-blog" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 reveal">
+      <div class="col-md-4">
+
+        <div class="card">
+          <img src="./projectPicture/Interactive Musician.png" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Interactive Musician<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">Processing</p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project"
+                class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=FqcUiQCaFD0" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="card">
           <img src="./projectPicture/IoTBay.png" class="card-img-top" alt="Project 4">
           <div class="card-body">
             <h5 class="card-title">IoTBay<span class="tier tier-one">Tier 1</span></h5>
-            <p class="card-text">An online IoT device shopping platform built with Java and JSP, offering a range of smart home devices for browsing and purchasing. Built with: <a href="https://www.google.com/search?q=java" target="_blank"><strong>Java</strong></a> and <a href="https://www.google.com/search?q=jsp" target="_blank"><strong>JSP</strong></a>.</p>
+            <p class="card-text">An online IoT device shopping platform built with Java and JSP, offering a range of
+              smart home devices for browsing and purchasing. Built with: <a href="https://www.google.com/search?q=java"
+                target="_blank"><strong>Java</strong></a> and <a href="https://www.google.com/search?q=jsp"
+                target="_blank"><strong>JSP</strong></a>.</p>
             <div class="btn-group" role="group" aria-label="Project Links">
-                <a href="https://github.com/Iloveprogramm/Bubble-Game" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=-yDrw09LneY" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <!-- Add your blog link button here -->
-                <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                    <i class="fas fa-blog"></i>
-                </a>
-            </div>
-        </div>
-        
-      </div>
-  </div>
-       
-      <div class="col-md-4">
-    <div class="card">
-      <img src="./projectPicture/41001ass2.jpeg" class="card-img-top" alt="Project 4">
-      <div class="card-body">
-          <h5 class="card-title">Human Resources Management System<span class="tier tier-one">Tier 1</span></h5>
-          <p class="card-text">SaleForce</p>
-          <div class="btn-group" role="group" aria-label="Project Links">
-              <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                  <i class="fab fa-github"></i>
+              <a href="https://github.com/Iloveprogramm/Bubble-Game" class="btn btn-outline-secondary" target="_blank"
+                title="GitHub">
+                <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.youtube.com/watch?v=s4LRRLpeHTs" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                  <i class="fab fa-youtube"></i>
+              <a href="https://www.youtube.com/watch?v=-yDrw09LneY" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
               </a>
-              <!-- Add your blog link button here -->
               <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                  <i class="fas fa-blog"></i>
+                <i class="fas fa-blog"></i>
               </a>
+            </div>
           </div>
+
+        </div>
       </div>
-      
-  </div>
-</div>
-      
-    </div> 
-    <div class="row mt-4 reveal">
-    
 
       <div class="col-md-4">
-   
+        <div class="card">
+          <img src="./projectPicture/41001ass2.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Human Resources Management System<span class="tier tier-one">Tier 1</span></h5>
+            <p class="card-text">SaleForce</p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Musician-Interactive-Media-Project"
+                class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=s4LRRLpeHTs" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-4 reveal">
+
+
+      <div class="col-md-4">
+
         <div class="card">
           <img src="./projectPicture/DataDynamics.png" class="card-img-top" alt="DataDynamics Project">
           <div class="card-body">
             <h5 class="card-title">DataDynamics<span class="tier tier-two">Tier 2</span></h5>
             <p class="card-text">
-                A data visualization project that visually represents complex data. Built using 
-                <strong><a href="https://www.google.com/search?q=Python" target="_blank">Processing</a></strong>.
+              A data visualization project that visually represents complex data. Built using
+              <strong><a href="https://www.google.com/search?q=Python" target="_blank">Processing</a></strong>.
             </p>
             <div class="btn-group" role="group" aria-label="Project Links">
-                <a href="https://github.com/Iloveprogramm/DataDynamics-UTS-Data-Visualisation-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=cnO1_OhwSMg" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <!-- Add your blog link button here -->
-                <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                    <i class="fas fa-blog"></i>
-                </a>
+              <a href="https://github.com/Iloveprogramm/DataDynamics-UTS-Data-Visualisation-Project"
+                class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=cnO1_OhwSMg" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
             </div>
-        </div>        
+          </div>
+        </div>
       </div>
-    </div>
 
-   
-    <div class="col-md-4">
 
-      <div class="card">
+      <div class="col-md-4">
+
+        <div class="card">
           <img src="./projectPicture/BubbleGame.png" class="card-img-top" alt="Project 4">
           <div class="card-body">
             <h5 class="card-title">Bubble Game<span class="tier tier-two">Tier 2</span></h5>
             <p class="card-text">
-                A simple iOS game where users tap on bubbles appearing on the screen to score points. Built with: 
-                <a href="https://www.google.com/search?q=Ios" target="_blank"><strong>iOS</strong></a>.
+              A simple iOS game where users tap on bubbles appearing on the screen to score points. Built with:
+              <a href="https://www.google.com/search?q=Ios" target="_blank"><strong>iOS</strong></a>.
             </p>
             <div class="btn-group" role="group" aria-label="Project Links">
-                <a href="https://github.com/Iloveprogramm/Bubble-Game" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://youtu.be/QsO4aNXrckw" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <!-- Add your blog link button here -->
-                <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                    <i class="fas fa-blog"></i>
-                </a>
-            </div>
-        </div>
-        
-      </div>
-  </div>
-
-  <div class="col-md-4">
-
-    <div class="card">
-        <img src="./projectPicture/Interactive Mirror.png" class="card-img-top" alt="Project 4">
-        <div class="card-body">
-          <h5 class="card-title">Interactive Mirror<span class="tier tier-two">Tier 2</span></h5>
-          <p class="card-text">
-              A unique mirror interface with interactive features. Crafted with 
-              <strong><a href="https://www.google.com/search?q=Processing" target="_blank">Processing</a></strong>.
-          </p>
-          <div class="btn-group" role="group" aria-label="Project Links">
-              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                  <i class="fab fa-github"></i>
+              <a href="https://github.com/Iloveprogramm/Bubble-Game" class="btn btn-outline-secondary" target="_blank"
+                title="GitHub">
+                <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                  <i class="fab fa-youtube"></i>
+              <a href="https://youtu.be/QsO4aNXrckw" class="btn btn-outline-danger" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                <i class="fas fa-blog"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card">
+          <img src="./projectPicture/Interactive Mirror.png" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Interactive Mirror<span class="tier tier-two">Tier 2</span></h5>
+            <p class="card-text">
+              A unique mirror interface with interactive features. Crafted with
+              <strong><a href="https://www.google.com/search?q=Processing" target="_blank">Processing</a></strong>.
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
+                <i class="fab fa-youtube"></i>
               </a>
               <!-- Add your blog link button here -->
               <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                  <i class="fas fa-blog"></i>
+                <i class="fas fa-blog"></i>
               </a>
+            </div>
           </div>
+
+        </div>
       </div>
-      
-    </div>
-</div>
 
-<div class="col-md-4">
+      <div class="col-md-4">
 
-  <div class="card">
-      <img src="./projectPicture/Hospital-Management-System.jpeg" class="card-img-top" alt="Project 4">
-      <div class="card-body">
-        <h5 class="card-title">Hospital-Management-System<span class="tier tier-two">Tier 2</span></h5>
-        <p class="card-text">
-          C#
-        </p>
-        <div class="btn-group" role="group" aria-label="Project Links">
-            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+        <div class="card">
+          <img src="./projectPicture/Hospital-Management-System.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Hospital-Management-System<span class="tier tier-two">Tier 2</span></h5>
+            <p class="card-text">
+              C#
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+              </a>
+              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
                 <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Add your blog link button here -->
-            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
                 <i class="fas fa-blog"></i>
-            </a>
+              </a>
+            </div>
+          </div>
+
         </div>
-    </div>
-    
-  </div>
-</div>
+      </div>
 
-<div class="col-md-4">
+      <div class="col-md-4">
 
-  <div class="card">
-      <img src="./projectPicture/BankingSystem.jpeg" class="card-img-top" alt="Project 4">
-      <div class="card-body">
-        <h5 class="card-title">Simple Banking System<span class="tier tier-two">Tier 2</span></h5>
-        <p class="card-text">
-          C#
-        </p>
-        <div class="btn-group" role="group" aria-label="Project Links">
-            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+        <div class="card">
+          <img src="./projectPicture/BankingSystem.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Simple Banking System<span class="tier tier-two">Tier 2</span></h5>
+            <p class="card-text">
+              C#
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+              </a>
+              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
                 <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Add your blog link button here -->
-            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
                 <i class="fas fa-blog"></i>
-            </a>
+              </a>
+            </div>
+          </div>
+
         </div>
-    </div>
-    
-  </div>
-</div>
+      </div>
 
-<div class="col-md-4">
+      <div class="col-md-4">
 
-  <div class="card">
-      <img src="./projectPicture/TextEditor.jpeg" class="card-img-top" alt="Project 4">
-      <div class="card-body">
-        <h5 class="card-title">TextEditor<span class="tier tier-two">Tier 2</span></h5>
-        <p class="card-text">
-          C#
-        </p>
-        <div class="btn-group" role="group" aria-label="Project Links">
-            <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary" target="_blank" title="GitHub">
+        <div class="card">
+          <img src="./projectPicture/TextEditor.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">TextEditor<span class="tier tier-two">Tier 2</span></h5>
+            <p class="card-text">
+              C#
+            </p>
+            <div class="btn-group" role="group" aria-label="Project Links">
+              <a href="https://github.com/Iloveprogramm/Interactive-Mirror" class="btn btn-outline-secondary"
+                target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank" title="YouTube">
+              </a>
+              <a href="https://www.youtube.com/watch?v=xyEW542EM-I" class="btn btn-outline-danger" target="_blank"
+                title="YouTube">
                 <i class="fab fa-youtube"></i>
-            </a>
-            <!-- Add your blog link button here -->
-            <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+              </a>
+              <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
                 <i class="fas fa-blog"></i>
-            </a>
-        </div>
-    </div>
-    
-  </div>
-</div>
+              </a>
+            </div>
+          </div>
 
-<div class="row mt-4 reveal"> 
- <div class="col-md-4">
-         
+        </div>
+      </div>
+
+      <div class="row mt-4 reveal">
+        <div class="col-md-4">
+
           <div class="card">
-              <img src="./projectPicture/CarRentalSystem.jpeg" class="card-img-top" alt="Project 4">
-              <div class="card-body">
-                  <h5 class="card-title">Car Rental System<span class="tier tier-two">Tier 2</span></h5>
-                  <p class="card-text">
-                      A mobile application offering users the ability to rent cars on-the-go. Developed for 
-                      <strong><a href="https://www.google.com/search?q=iOS" target="_blank">iOS</a></strong>.
-                  </p>
-                  <div class="btn-group" role="group" aria-label="Project Links">
-                      <a href="https://github.com/Iloveprogramm/Assessment-task-3-Group-Project" class="btn btn-outline-secondary" target="_blank" title="GitHub">
-                          <i class="fab fa-github"></i>
-                      </a>
-                      <a href="https://www.youtube.com/watch?v=2lb1IH-P6c4" class="btn btn-outline-danger" target="_blank" title="YouTube">
-                          <i class="fab fa-youtube"></i>
-                      </a>
-                      <!-- Add your blog link button here -->
-                      <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
-                          <i class="fas fa-blog"></i>
-                      </a>
-                  </div>
+            <img src="./projectPicture/CarRentalSystem.jpeg" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="card-title">Car Rental System<span class="tier tier-two">Tier 2</span></h5>
+              <p class="card-text">
+                A mobile application offering users the ability to rent cars on-the-go. Developed for
+                <strong><a href="https://www.google.com/search?q=iOS" target="_blank">iOS</a></strong>.
+              </p>
+              <div class="btn-group" role="group" aria-label="Project Links">
+                <a href="https://github.com/Iloveprogramm/Assessment-task-3-Group-Project"
+                  class="btn btn-outline-secondary" target="_blank" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=2lb1IH-P6c4" class="btn btn-outline-danger" target="_blank"
+                  title="YouTube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="your-blog-link" class="btn btn-outline-primary" target="_blank" title="Blog">
+                  <i class="fas fa-blog"></i>
+                </a>
               </div>
-              
+            </div>
+
           </div>
-      </div>
-
-    
-
-
-<section id="skills" class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container reveal">
-    <header class="header">
-        <h1>Programming Lanagage</h1>
-    </header>
-    <div class="container">
-        <div class="language">
-            <img src="./lanagage/html.png" alt="HTML Icon">
-            <h2>HTML</h2>
         </div>
 
-        <div class="language">
-            <img src="./lanagage/css.png" alt="CSS Icon">
-            <h2>CSS</h2>
-        </div>
 
-        <div class="language">
-            <img src="./lanagage/Js.png" alt="JavaScript Icon">
-            <h2>JavaScript</h2>
-        </div>
 
-        <div class="language">
-            <img src="./lanagage/processing.png" alt="Processing Icon">
-            <h2>Processing</h2>
-        </div>
 
-        <div class="language">
-            <img src="./lanagage/PHP.png" alt="PHP Icon">
-            <h2>PHP</h2>
-        </div>
+        <section id="skills" class="container mt-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="container reveal">
+            <header class="header">
+              <h1>Programming Lanagage</h1>
+            </header>
+            <div class="container">
+              <div class="language">
+                <img src="./lanagage/html.png" alt="HTML Icon">
+                <h2>HTML</h2>
+              </div>
 
-        <div class="language">
-            <img src="./lanagage/MYSQL.png" alt="MYSQL Icon">
-            <h2>MYSQL</h2>
-        </div>
+              <div class="language">
+                <img src="./lanagage/css.png" alt="CSS Icon">
+                <h2>CSS</h2>
+              </div>
 
-        <div class="language">
-            <img src="./lanagage/SWIFT.png" alt="SWIFT Icon">
-            <h2>SWIFT</h2>
-        </div>
+              <div class="language">
+                <img src="./lanagage/Js.png" alt="JavaScript Icon">
+                <h2>JavaScript</h2>
+              </div>
 
-        <div class="language">
-            <img src="./lanagage/JAVA.png" alt="JAVA Icon">
-            <h2>JAVA</h2>
-        </div>
+              <div class="language">
+                <img src="./lanagage/processing.png" alt="Processing Icon">
+                <h2>Processing</h2>
+              </div>
 
-        <div class="language">
-            <img src="./lanagage/Csharp.png" alt="C# Icon">
-            <h2>C#</h2>
-        </div>
+              <div class="language">
+                <img src="./lanagage/PHP.png" alt="PHP Icon">
+                <h2>PHP</h2>
+              </div>
 
-        <div class="language">
-            <img src="./lanagage/JSP.png" alt="JSP Icon">
-            <h2>JSP</h2>
-        </div>
-    </div>
+              <div class="language">
+                <img src="./lanagage/MYSQL.png" alt="MYSQL Icon">
+                <h2>MYSQL</h2>
+              </div>
 
-    <div class="container">
-        <header class="header">
-            <h1>Develop Tool</h1>
-        </header>
-        <div class="container reveal">
-            <div class="language">
-                <img src="./Develop Tool/Github.png" alt="Github Icon">
-                <h2>Github</h2>
+              <div class="language">
+                <img src="./lanagage/SWIFT.png" alt="SWIFT Icon">
+                <h2>SWIFT</h2>
+              </div>
+
+              <div class="language">
+                <img src="./lanagage/JAVA.png" alt="JAVA Icon">
+                <h2>JAVA</h2>
+              </div>
+
+              <div class="language">
+                <img src="./lanagage/Csharp.png" alt="C# Icon">
+                <h2>C#</h2>
+              </div>
+
+              <div class="language">
+                <img src="./lanagage/JSP.png" alt="JSP Icon">
+                <h2>JSP</h2>
+              </div>
             </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Visual Stuido.png" alt="Visual Studio Icon">
-                <h2>Visual Studio</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Visual Studio Code.png" alt="Visual Studio Code Icon">
-                <h2>Visual Studio Code</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Netbean.png" alt="Netbean Icon">
-                <h2>Netbean</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/BlueJ.png" alt="BlueJ Icon">
-                <h2>BlueJ</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Xampp.png" alt="Xampp Icon">
-                <h2>Xampp</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Xcode.png" alt="Xcode Icon">
-                <h2>Xcode</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/Azure.png" alt="Azure Icon">
-                <h2>Azure</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/SaleForce.png" alt="SaleForce Icon">
-                <h2>SaleForce</h2>
-            </div>
-    
-            <div class="language">
-                <img src="./Develop Tool/AWS.png" alt="AWS Icon">
-                <h2>AWS</h2>
-            </div>
-        </div>
-</section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-  <script>
-    AOS.init();
-    let rank = 0;
-  const targetRank = 90;
-  const intervalId = setInterval(() => {
-    if(rank < targetRank){
-      rank += 1;
-      document.getElementById('rank').textContent = rank;
-    } else {
-      clearInterval(intervalId);
-    }
-  }, 50);
+            <div class="container">
+              <header class="header">
+                <h1>Develop Tool</h1>
+              </header>
+              <div class="container reveal">
+                <div class="language">
+                  <img src="./Develop Tool/Github.png" alt="Github Icon">
+                  <h2>Github</h2>
+                </div>
 
-  window.addEventListener('scroll', () => {
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    scrollIndicator.style.display = window.pageYOffset > 50 ? 'none' : 'block';
-  });
-  window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY || window.pageYOffset;
-    const scaleFactor = Math.max(0.5, 1 - scrollY / 1000);
-    document.querySelector('.pro').style.transform = `scale(${scaleFactor}) translateY(${-scrollY / 2}px)`;
-});
+                <div class="language">
+                  <img src="./Develop Tool/Visual Stuido.png" alt="Visual Studio Icon">
+                  <h2>Visual Studio</h2>
+                </div>
 
-function revealOnScroll() {
-  var reveals = document.querySelectorAll('.reveal');
+                <div class="language">
+                  <img src="./Develop Tool/Visual Studio Code.png" alt="Visual Studio Code Icon">
+                  <h2>Visual Studio Code</h2>
+                </div>
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150; // 调整这个值来更早或更晚触发动画
+                <div class="language">
+                  <img src="./Develop Tool/Netbean.png" alt="Netbean Icon">
+                  <h2>Netbean</h2>
+                </div>
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add('bounceIn'); // 添加动画类
-    } else {
-      reveals[i].classList.remove('bounceIn'); // 移除动画类
-    }
-  }
-}
+                <div class="language">
+                  <img src="./Develop Tool/BlueJ.png" alt="BlueJ Icon">
+                  <h2>BlueJ</h2>
+                </div>
 
-window.addEventListener('scroll', revealOnScroll);
+                <div class="language">
+                  <img src="./Develop Tool/Xampp.png" alt="Xampp Icon">
+                  <h2>Xampp</h2>
+                </div>
+
+                <div class="language">
+                  <img src="./Develop Tool/Xcode.png" alt="Xcode Icon">
+                  <h2>Xcode</h2>
+                </div>
+
+                <div class="language">
+                  <img src="./Develop Tool/Azure.png" alt="Azure Icon">
+                  <h2>Azure</h2>
+                </div>
+
+                <div class="language">
+                  <img src="./Develop Tool/SaleForce.png" alt="SaleForce Icon">
+                  <h2>SaleForce</h2>
+                </div>
+
+                <div class="language">
+                  <img src="./Develop Tool/AWS.png" alt="AWS Icon">
+                  <h2>AWS</h2>
+                </div>
+              </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+        <script>
+          AOS.init();
+          let rank = 0;
+          const targetRank = 90;
+          const intervalId = setInterval(() => {
+            if (rank < targetRank) {
+              rank += 1;
+              document.getElementById('rank').textContent = rank;
+            } else {
+              clearInterval(intervalId);
+            }
+          }, 50);
+
+          window.addEventListener('scroll', () => {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            scrollIndicator.style.display = window.pageYOffset > 50 ? 'none' : 'block';
+          });
+          window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY || window.pageYOffset;
+            const scaleFactor = Math.max(0.5, 1 - scrollY / 1000);
+            document.querySelector('.pro').style.transform = `scale(${scaleFactor}) translateY(${-scrollY / 2}px)`;
+          });
+
+          function revealOnScroll() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add('bounceIn');
+              } else {
+                reveals[i].classList.remove('bounceIn');
+              }
+            }
+          }
+
+          window.addEventListener('scroll', revealOnScroll);
 
 
-  </script>
+        </script>
 </body>
+
 </html>
