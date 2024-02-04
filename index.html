@@ -418,6 +418,151 @@
     .tier i {
       margin-right: 5px;
     }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      width: 100%;
+      margin-top: auto;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .language {
+      opacity: 0;
+      /* 开始时设置为完全透明 */
+      animation: fadeIn 1s ease forwards;
+      /* 应用动画 */
+    }
+
+    /* 为每个语言图标设置不同的动画延迟 */
+    .language:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+
+    .language:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .language:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    .language:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    .language:nth-child(5) {
+      animation-delay: 2.5s;
+    }
+
+    .language:nth-child(6) {
+      animation-delay: 3s;
+    }
+
+    .language:nth-child(7) {
+      animation-delay: 3.5s;
+    }
+
+    .language:nth-child(8) {
+      animation-delay: 4s;
+    }
+
+    .language:nth-child(9) {
+      animation-delay: 4.5s;
+    }
+
+    .language:nth-child(10) {
+      animation-delay: 5s;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .develop-tool {
+      opacity: 0;
+      /* 开始时设置为完全透明 */
+    }
+
+    /* 为每个开发工具图标设置不同的动画延迟和滑入方向 */
+    .develop-tool:nth-child(odd) {
+      animation: slideInLeft 1s ease forwards;
+    }
+
+    .develop-tool:nth-child(even) {
+      animation: slideInRight 1s ease forwards;
+    }
+
+    .develop-tool:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+
+    .develop-tool:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .develop-tool:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    .develop-tool:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    .develop-tool:nth-child(5) {
+      animation-delay: 2.5s;
+    }
+
+    .develop-tool:nth-child(6) {
+      animation-delay: 3s;
+    }
+
+    .develop-tool:nth-child(7) {
+      animation-delay: 3.5s;
+    }
+
+    .develop-tool:nth-child(8) {
+      animation-delay: 4s;
+    }
+
+    .develop-tool:nth-child(9) {
+      animation-delay: 4.5s;
+    }
+
+    .develop-tool:nth-child(10) {
+      animation-delay: 5s;
+    }
   </style>
 </head>
 
@@ -1044,6 +1189,43 @@
                 </div>
               </div>
         </section>
+        <footer class="text-muted py-5 bg-light">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Chenjun Zheng</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Privacy</a></li>
+                  <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Follow Me</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="https://github.com/Iloveprogramm" target="_blank"><i
+                        class="fab fa-github"></i> GitHub</a></li>
+                  <li><a class="text-muted" href="https://www.youtube.com/channel/UCJJ0cPseOZoYOngFh8NgE3Q"
+                      target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                  <li><a class="text-muted" href="mailto:chenjunzhengjim@gmail.com"><i class="fas fa-envelope"></i>
+                      Email</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Project Showcase</a></li>
+                  <li><a class="text-muted" href="./IT resume.pdf" download="Chenjun_Zheng_Resume.pdf">Download
+                      Resume</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center py-4 my-4 border-top">
+              <p>&copy; 2024 Chenjun Zheng. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1135,5 +1317,7 @@
 
         </script>
 </body>
+
+
 
 </html>
